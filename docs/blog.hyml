@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог - TreiderBlog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header>
+    <div class="container">
+      <h1>TreiderBlog</h1>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="strategies.html">Стратегии</a>
+        <a href="analytics.html">Аналитика</a>
+        <a href="news.html">Новости</a>
+        <a href="blog.html">Блог</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Блог -->
+  <section class="blog">
+    <div class="container">
+      <h3>Блог о трейдинге</h3>
+      <div class="blog-post">
+        <h4>Стратегия скользящих средних: Как начать торговать</h4>
+        <div class="meta">29 июля 2025 | Категория: Стратегии</div>
+        <p>Скользящие средние (SMA) — один из самых простых и эффективных индикаторов для трейдинга. Эта стратегия основана на пересечении быстрой (10-периодной) и медленной (20-периодной) скользящих средних. Когда быстрая SMA пересекает медленную вверх, это сигнал к покупке; вниз — к продаже.</p>
+        <p>Пример кода для TradingView (Pine Script):</p>
+        <pre><code>
+// @version=5
+strategy("SMA Crossover", overlay=true)
+fast_sma = ta.sma(close, 10)
+slow_sma = ta.sma(close, 20)
+if ta.crossover(fast_sma, slow_sma)
+    strategy.entry("Long", strategy.long)
+if ta.crossunder(fast_sma, slow_sma)
+    strategy.entry("Short", strategy.short)
+        </code></pre>
+        <p>Протестируйте стратегию на демо-счете TradingView, чтобы оценить ее эффективность. Подробности в разделе <a href="strategies.html">Стратегии</a>.</p>
+      </div>
+      <div class="blog-post">
+        <h4>Как выбрать стартовый капитал для трейдинга</h4>
+        <div class="meta">28 июля 2025 | Категория: Аналитика</div>
+        <p>Определение стартового капитала зависит от максимальной просадки вашей стратегии. Используйте наш Python-скрипт в разделе <a href="analytics.html">Аналитика</a> для расчета минимальной суммы. Например, если просадка составляет 20%, а средний размер сделки — $1000, вам понадобится минимум $5000.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 TreiderBlog. <a href="https://github.com/Reppatola/TreiderBlog">GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>
