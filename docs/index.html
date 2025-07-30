@@ -4,145 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TreiderBlog - Трейдинг и Аналитика</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #1a1a2e, #16213e);
-      color: #e0e0e0;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    /* Шапка */
-    header {
-      background: #0f172a;
-      padding: 20px 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    header .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      font-size: 24px;
-      color: #22c55e;
-    }
-    nav a {
-      color: #e0e0e0;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 16px;
-    }
-    nav a:hover {
-      color: #22c55e;
-      transition: color 0.3s;
-    }
-    /* Приветственный блок */
-    .hero {
-      background: url('https://source.unsplash.com/random/1600x900/?trading,finance') no-repeat center/cover;
-      padding: 80px 0;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .hero a {
-      background: #22c55e;
-      color: #fff;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 18px;
-    }
-    .hero a:hover {
-      background: #16a34a;
-      transition: background 0.3s;
-    }
-    /* Секция "О проекте" */
-    .about {
-      padding: 60px 0;
-    }
-    .about h3 {
-      font-size: 28px;
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-    .card svg {
-      width: 48px;
-      height: 48px;
-      margin-bottom: 15px;
-      stroke: #22c55e;
-    }
-    .card h4 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    /* Футер */
-    footer {
-      background: #0f172a;
-      padding: 20px 0;
-      text-align: center;
-      margin-top: 40px;
-    }
-    footer a {
-      color: #22c55e;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    /* Адаптивность */
-    @media (max-width: 768px) {
-      header .container {
-        flex-direction: column;
-        text-align: center;
-      }
-      nav {
-        margin-top: 10px;
-      }
-      nav a {
-        margin: 0 10px;
-      }
-      .hero h2 {
-        font-size: 28px;
-      }
-      .hero p {
-        font-size: 16px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Шапка -->
@@ -154,7 +16,7 @@
         <a href="strategies.html">Стратегии</a>
         <a href="analytics.html">Аналитика</a>
         <a href="news.html">Новости</a>
-        <a href="demo.html">Демо-счет</a>
+        <a href="blog.html">Блог</a>
       </nav>
     </div>
   </header>
@@ -163,7 +25,7 @@
   <section class="hero">
     <div class="container">
       <h2>Добро пожаловать в TreiderBlog!</h2>
-      <p>Экосистема для трейдеров: торговые стратегии, аналитика рынка, новости и тестирование на демо-счете TradingView.</p>
+      <p>Экосистема для трейдеров: торговые стратегии, аналитика рынка, новости и блог с полезными статьями.</p>
       <a href="#about">Начать</a>
     </div>
   </section>
@@ -185,8 +47,8 @@
         </div>
         <div class="card">
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
-          <h4>Новости</h4>
-          <p>Свежие обзоры рынка и рекомендации для трейдеров.</p>
+          <h4>Блог</h4>
+          <p>Полезные статьи о трейдинге, стратегиях и аналитике рынка.</p>
         </div>
       </div>
     </div>
