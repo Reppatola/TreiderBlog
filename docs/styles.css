@@ -122,6 +122,49 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
+/* Стили для блога */
+.blog {
+  padding: 60px 0;
+}
+
+.blog h3 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-post {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-post .meta {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+.blog-post p {
+  margin-bottom: 15px;
+}
+
+.blog-post a {
+  color: #22c55e;
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
 /* Футер */
 footer {
   background: #0f172a;
